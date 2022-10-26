@@ -21,43 +21,9 @@ class Bar extends Component {
         return (
             <tbody >
                 <tr >
-                    <th className="table" >
+                    <th  >
                         <div >
                             <ul>
-
-
-                                <ul>
-                                   
-                                    
-                                   <li>
-                                    {(() => {
-                                             switch (this.state.nombre) {
-                                                    case "ok":
-                                                        return(
-                                                            <div>
-                                                          
-                                                            <button className="btn-navBar" >Home</button>
-                                                            <button className="btn-navBar" >Music</button> 
-                                                            <button className="btn-navBar" >Blog</button> 
-                                                            <button className="btn-navBar" >Calendar</button> 
-                                                            <button className="btn-navBar" onClick={this.cerrarSesion}>Contact</button>
-                                                            </div>
-                                                        );
-                                                    case undefined:
-                                                        return(
-                                                            <div>
-                                                            {/*<li  ><Link to='/' className="active">Home</Link></li>*/}
-                                                            {/*<li><Link to='Login' className="active">Login</Link></li>*/}
-                                                            
-                                                            <a className="btn-navBar" >Home</a>
-                                                            <a className="btn-navBar" >Login</a>
-                                                            <a className="btn-navBar" >Crear Cuenta</a>
-                                                            </div>
-                                                        );
-                                             }
-                                            })()}
-                                    </li>
-                                </ul>
 
 
 

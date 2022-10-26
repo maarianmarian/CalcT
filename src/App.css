@@ -9,231 +9,88 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -moz-font-feature-settings: initial;
   -webkit-font-feature-settings: normal;
-  margin-top:0px;
-  background: rgb(161, 86, 0);
- background-image:url('./img/grupo-colors.png');
- background-size:contain;
-background-position: top; 
 
-	
-background-repeat: no-repeat;
-/*background:  rgb(134, 38, 38);*/
-}
-.header{
-  color: azure;
-  background-image: none;
-  background-color: rgb(56, 56, 56);
-  min-height: 40px;
-  text-align:right;
-  list-style: none;
-  padding-top: 10px;
+  background: rgba(47, 1, 1, 0.11);
 
 }
-#bar1{
-  height: 10px;
-  list-style: none;
-  margin-left: 1px;
-  margin-right: 20px;
-  margin-bottom: 1px;
-  font-size: 15px;
-  
+.center{
+  width: 100%;
 }
 
-#bar1:hover{
-  color: #4db3db;
-   cursor: pointer;
- }
-
-ul li{
-  list-style: none;
-  height: 0px;
-  display:inline-block;
-  margin-left: 1px;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  position: inherit;
-
-}
-.App {
-  /*text-align: center;*/
-}
-
-.App-logo {
-  height: 300px;
-  pointer-events: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 200px;
-  border-top: 0px;
-  padding-top: 10px;
-  position: relative;
-  float:left;
-}
-#grupo {
-  opacity: 0.9;
-}
-.App-grupo{
-  max-width:inherit;
-  max-height: 400px;
- margin-top: -100px;
- 
-}
-
-.btn-navBar{
-  /*text-decoration: none;*/
-  margin-right: 50px;
-  padding-top: 0px;
-  text-align: left;
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 15px;
-  box-shadow: none;
-  background-color: rgba(109, 109, 109, 0);
-  border: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -moz-font-feature-settings: initial;
-  -webkit-font-feature-settings: normal;
-  
-}
-.btn-navBar:hover{
- color: #c5844f;
-  cursor: pointer;
-  text-decoration-style: dotted;
-}
-
-.table{
-  text-decoration:underline;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 50px;
-  padding-left: 30px;
-  text-align: right;
-  background: #27272763;
-  width: 1500px;
-  max-height: 20px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-image:url('./img/dinpattern-stripe.gif');
- /*background-image:url('foxtail.png');*/
- /*background-image:url('dark-canvas.gif');*/
-  
-  min-height: 5vh;
-  flex-direction: column;
-  align-items: inherit;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: azure;
-  text-align:right;
-  list-style: none;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.intro{
-  color:#ffffff;
-  margin-top: 300px;
-  max-width: 500px;
-}
-.flex-container {
-  margin-top: 300px;
-  display: flex;
-  height: 600px;
-  flex-wrap: wrap;
-  align-content: space-between;
-  overflow: scroll;
-  background-color: DodgerBlue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
+.center .subheader{
+  font-size: 35px;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+
 }
 
-.sidebar{
-  width: 60%;
-  height: 130px;
-  margin-top: 400px;
-  margin-left:auto;
-  margin-right: 25px;
+.center h1{
+  text-align: center;
+  font-size: 25px;
+}
+
+#sidebar{
+  width: 30%;
+  height: 280px;
+  margin-top: 75px;
+  margin-left:  480px;
   margin-bottom: 32px;
-  background: rgba(182, 182, 182, 0);
-  border-radius: 1px;
-  border-top:5px  #00b7ff;
-  /*box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);*/
-  font-size: 18px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.842);
+  color: #135081;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.308);
+  font-size: 16px;
   font-weight:300;
-  color: #b4b4b4;
-  text-align: justify;
+  border-radius: 10px;
+  transition: 1s;
 }
 
-.sidebar2{
-  width: 40%;
-  height: 200px;
-  margin-top: 0px;
-  margin-left:50px;
-  margin-right: auto;
-  margin-bottom: 32px;
-  background: rgba(182, 182, 182, 0);
-  border-radius: 1px;
-  border-top:5px  #00b7ff;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
-  font-size: 18px;
-  font-weight:300;
-  color: #b4b4b4;
-  text-align:justify;
+#sidebar.archivosAdminCenter{
+  float: center;
+  margin-top: -380px;
+  margin-left: 310px;
+  min-height: 350px;
+  height: auto;
+  width: 900px;
+  color: #135081;
 }
-.music-logo {
-  height: 100px;
-  pointer-events: none;
-  margin-top: -50px;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-top: 0px;
-  padding-top: 10px;
-  position: relative;
- 
+
+#sidebar.archivosAdminCenter3{
+
+  float: center;
+  margin-left: 480px;
+  min-height: 350px;
+  height: auto;
+  width: 400px;
+  color: #138153;
 }
-.sidebar3{
-  width: 40%;
-  height: 200px;
-  margin-top: -230px;
-  margin-left:auto;
-  margin-right: 50px;
-  margin-bottom: 32px;
-  background: rgba(182, 182, 182, 0);
-  border-radius: 1px;
-  border-top:5px  #00b7ff;
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.19);
-  font-size: 18px;
-  font-weight:300;
-  color: #b4b4b4;
-  text-align:justify;
-  float: right;
+
+.btn{
+
+  background: #6b00b3;
+  color: rgb(255, 255, 255);
+  padding:15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  max-width: 1220px;
+  transition: 200ms;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: center;
 }
 
 
+#btn-table{
+  min-width: 210px;
+  max-width: 210px;
+  min-height: 60px;
+  font-size: 14px;
 
+}
+
+.btn:hover{
+  background: #2a0046;
+  color: white;
+}

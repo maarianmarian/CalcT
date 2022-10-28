@@ -51,9 +51,8 @@ class App extends Component {
     let vacaciones = 0;
     let aguinaldo = 0;
     let finiq = 0;
-    let RestaFechas = new Date();
+    let RestaFechas = 0;
     let antig = 0;
-    let dAntig = 0;
 
 
     RestaFechas = this.dateConverter();
@@ -61,24 +60,54 @@ class App extends Component {
     if (this.state.sueldo > 0 && this.state.sueldo !== undefined) {
       sueldoDiario = (this.state.sueldo / 7);
       antig = Math.trunc(RestaFechas / 365);
+    console.log (antig)
+
 
 //calculo pago vacaciones
      // dAntig = Math.trunc(RestaFechas / 365);
 
       if (this.state.antig > 0 && this.state.antig !== undefined) {
           vacaciones = 0;}
-      if (antig = 1) {
+      if (antig === 1) {
           vacaciones = 132;
        }
-      if (antig = 2) {
+      if (antig === 2) {
           vacaciones = 8;
          }
-      if (antig = 3) {
+      if (antig === 3) {
           vacaciones = 10;
            }
-      if (antig = 4) {
+      if (antig === 4) {
           vacaciones = 12;
              }
+      if (antig >= 5 || antig <= 9) {
+            vacaciones = 14;
+        }
+      if (antig >= 10 || antig <= 14) {
+            vacaciones = 16;
+        }
+      if (antig >= 15 || antig <= 19) {
+            vacaciones = 18;
+        }
+      if (antig >= 21 || antig <= 24) {
+            vacaciones = 20;
+        }
+      if (antig >= 25 || antig <= 29) {
+            vacaciones = 22;
+        }
+      if (antig >= 30 || antig <= 34) {
+            vacaciones = 24;
+        }
+      if (antig >= 35 || antig <= 39) {
+            vacaciones = 26;
+        }
+      if (antig >= 40 || antig <= 44) {
+            vacaciones = 28;
+        }
+      if (antig >= 45 || antig <= 49) {
+            vacaciones = 30;
+        }
+
 
              //calculo días vacaciones if (this.antig = 0 && this.vacaciones !== 4)
 
@@ -123,19 +152,18 @@ class App extends Component {
               <input type="date" ref={this.fecha1} onChange={this.changeState}></input><br/><br/>
               <label>Fecha de salida </label><br/><br/>
               <input type="date" ref={this.fecha2} onChange={this.changeState}></input><br/><br/>
-
               <button className="btn" id="btn-table" onClick={this.calcular}>Calcular</button>
               <br/><br/>
               <output>Días días trabajados: {this.state.fechaRes}</output>
-              <br/>
+              <br/> <br/>
               <output>Antigüedad: {this.state.antig}</output>
-              <br/>
+              <br/> <br/>
               <output>Vacaciones: {this.state.vacaciones}</output>
-              <br/>
+              <br/> <br/>
               <output>Aguinaldo:{this.state.aguinaldo}</output>
-              <br/>
-              <output>finiquito:{this.state.finiquito}</output>
-              <br/>
+              <br/> <br/>
+              <output>Finiquito:{this.state.finiquito}</output>
+              <br/> <br/>
             </div>
           </div>
         </>
